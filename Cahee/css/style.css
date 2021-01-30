@@ -1,0 +1,467 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+/* Section style start */
+.section__title {
+  line-height: 0.42;
+  margin-bottom: 34px;
+}
+
+.section__title--primary {
+  font-size: 60px;
+  color: #262626;
+  font-weight: 900;
+}
+
+.section__title--secondary {
+  font-size: 90px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.section__title--contact {
+  font-size: 90px;
+  color: #262626;
+  font-weight: 700;
+  font-family: "Raleway";
+  text-align: center;
+  margin-top: 153px;
+}
+
+.section__description {
+  font-size: 17px;
+  line-height: 1.59;
+  margin-bottom: 30px;
+}
+
+.section__description--dark {
+  color: #262626;
+}
+
+.section__description--light {
+  color: #fff;
+}
+
+.section {
+  position: relative;
+}
+
+.section--header {
+  background: url(../images/header_bg.png) no-repeat center/cover;
+  padding: 50px 0 404px;
+}
+
+.section--about {
+  padding: 70px 0;
+  background-image: radial-gradient(circle at 0 0, #00c4c4, #00b7b7, #00adad, #009c9c), linear-gradient(to bottom, #00c4c4, #00c4c4);
+}
+.section--contact {
+  background: #fff url(../images/contact-bg.png) no-repeat center/cover;
+}
+
+.section__scroll-icon {
+  position: absolute;
+  bottom: 69px;
+  transform: translateX(50%);
+  left: 50%;
+}
+
+/* Section style end */
+
+
+/* Button style start */
+.button {
+  padding: 14px 25px;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  line-height: 1.35;
+}
+
+.button--primary {
+  background-color: #ff6033;
+}
+
+.button--blog {
+  display: flex;
+  align-content: center;
+  margin: auto;
+  margin-top: 49px;
+  filter: drop-shadow(0px 2px 2.5px rgba(0,0,0,0.5));
+  background-color: #f72b3b;
+}
+
+/* Button style end */
+
+/* Header style start */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 258px;
+}
+
+.nav__link {
+  font-size: 16px;
+  font-weight: 700;
+  color: #262626;
+  text-decoration: none;
+  margin-left: 35px;
+  position: relative;
+}
+
+.nav__link:hover {
+  color: #262626;
+}
+
+.nav__link::before {
+  content: '';
+  width: 0;
+  background-color: #ff6033;
+  height: 3px;
+  position: absolute;
+  top: -9px;
+  transition: all 0.5s;
+}
+
+.nav__link:hover::before {
+  content: "";
+  width: 100%;
+}
+
+/* Header style end */
+
+
+/* Blog style start */
+
+.section--blog {
+  padding: 100px 0 120px;
+  background-color: #b07cf7;
+}
+
+.blog--title {
+  font-family: Raleway;
+  font-size: 90px;
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.blog--subtitle {
+  line-height: 1.47;
+  font-size: 17px;
+  margin-bottom: 47px;
+  color: #fff;
+  max-width: 574px;
+  margin: 0 auto 47px;
+  text-align: center;
+}
+
+.blog--link {
+  color: #fff;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+}
+
+.blog--link img {
+  width: 100%;
+}
+
+.blog--link:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(255, 255, 255, 0.1));
+  opacity: 0;
+}
+
+.blog--link:hover:before {
+  opacity: 1;
+}
+
+.blog--link:hover .section--blog__date {
+  top: 30px;
+  left: 30px;
+}
+
+.blog--link:hover .section--blog__content {
+  bottom: 30px;
+  left: 30px;
+}
+
+.section--blog__date,
+.section--blog__content {
+  position: absolute;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.section--blog__date {
+  top: -30px;
+  left: -30px;
+}
+
+.section--blog__content {
+  bottom: -100px;
+  left: -60px;
+}
+
+/* Blog style end */
+
+/* Services style start here */
+
+.section--services {
+  background-color: #70bfff;
+  position: relative;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 179px;
+  margin-bottom: 179px;
+  margin-left: 60px;
+}
+
+.services__list--item {
+  text-decoration: none;
+  width: 360px;
+  height: 100px;
+  filter: drop-shadow(0px 4px 5px rgba(0,0,0,0.5));
+  background-color: #ffffff;
+  font-size: 20px;
+  line-height: 27px;
+  color: #262626;
+  font-weight: 700;
+  font-family: "Raleway";
+  text-align: center;
+  margin-top: 19px;
+  padding-top: 25px;
+}
+
+.services__list--text {
+  display: inline-block;
+  width: 240px;
+}
+
+.services__list--icon {
+  width: 55px;
+  height: 49px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.services__list--icon_planet {
+  margin-bottom: 30px;
+}
+
+.services__image {
+  margin-top: 101px;
+}
+
+.services__title {
+  position: absolute;
+  top: 360px;
+  font-size: 80px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Raleway";
+  text-align: right;
+}
+
+/* Services style end */
+
+/* Contact style start here */
+
+.contact__subtitle {
+  margin-bottom: 46px;
+  margin-top: 48px;
+  max-width: 420px;
+  color: #262626;
+  font-weight: 300;
+  font-family: "Raleway";
+}
+
+.contact__form_input {
+  width: 90%;
+  height: 50px;
+  background-color: #00c4c4;
+  margin-bottom: 14px;
+  border: none;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Raleway";
+  padding: 20px;
+  opacity: 0.5;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Raleway";
+  text-align: start;
+ } 
+
+ textarea::-webkit-input-placeholder { 
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Raleway";
+  text-align: start;
+ }
+
+.contact__form_input:focus {
+  background-color: #039191;
+  border: none;
+  outline: none;
+  border-left: 5px solid #355b82;
+}
+
+.contact__form_input--message {
+  width: 90%;
+  height: 250px;
+  margin-bottom: 100px;
+}
+
+.contact__info--title {
+  font-size: 17px;
+  line-height: 25px;
+  color: #262626;
+  font-weight: 700;
+  font-family: "Raleway";
+  margin-bottom: 0px;
+}
+
+.contact__info--subtitle {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+footer {
+  height: 90px;
+  background-color: #000;
+}
+
+.footer__rights {
+  font-size: 16px;
+  line-height: 25px;
+  color: #b9b9b9;
+  font-weight: 300;
+  font-family: "Raleway";
+}
+
+.footer__logo {
+  font-size: 25px;
+  line-height: 25px;
+  color: #b9b9b9;
+  font-weight: 400;
+  font-family: "Pacifico";
+  text-align: center;
+  margin: 31px auto;
+}
+
+.footer__rights {
+  font-size: 12px;
+  line-height: 25px;
+  color: #b9b9b9;
+  font-weight: 300;
+  font-family: "Raleway";
+  margin: 31px auto;
+}
+
+.footer__producer {
+  font-size: 12px;
+  color: #b9b9b9;
+  font-weight: 300;
+  font-family: "Raleway";
+  text-align: right;
+  margin-top: 31px;
+}
+
+.love {
+  font-weight: 700;
+  color: red;
+}
+
+.title--secondary {
+  color: #000;
+  margin-top: 30px;
+}
+
+.subtitle--secondary {
+  color: #000;
+  height: 69px;
+  font-size: 17px;
+  line-height: 27px;
+  font-weight: 300;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 22px;
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
